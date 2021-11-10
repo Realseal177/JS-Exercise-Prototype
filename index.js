@@ -117,8 +117,16 @@ function Baby(name, age, favoriteToy) {
   this.name = name;
   this.age = age;
   this.favoriteToy = favoriteToy;
-}
+};
 
+Baby.prototype.play = function() {
+  return `Playing with ${this.favoriteToy}`
+};
+
+
+const berty = new Baby('Berty', '32', 'people');
+// berty.play();
+console.log(berty.play());
 
 /* 
   TASK 4
